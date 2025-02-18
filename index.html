@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada Amiga</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Caminhada Amiga</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#procurar">Procurar Parceiros</a></li>
+                <li><a href="#rotas">Sugestões de Rotas</a></li>
+                <li><a href="#chat">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="center-content">
+                <h2>Bem-vindo ao Caminhada Amiga</h2>
+                <p>Encontre parceiros de caminhada ou corrida e mantenha uma rotina saudável e social.</p>
+                <div class="icons">
+                    <i class="fas fa-walking"></i>
+                    <i class="fas fa-running"></i>
+                    <i class="fas fa-hiking"></i>
+                    <i class="fas fa-blind"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="perfil">
+            <h2>Perfil do Usuário</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="preferencias">Preferências de Caminhada/Corrida:</label>
+                        <input type="text" id="preferencias" name="preferencias" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="horarios">Horários Disponíveis:</label>
+                        <input type="text" id="horarios" name="horarios" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="nivel">Nível de Condicionamento Físico:</label>
+                        <input type="text" id="nivel" name="nivel" required>
+                    </div>
+                </div>
+                <button type="submit">Salvar</button>
+            </form>
+        </section>
+
+        <section id="procurar">
+            <h2>Procurar Parceiros</h2>
+            <p>Use a busca para encontrar parceiros compatíveis.</p>
+            <form>
+                <input type="text" placeholder="Digite preferências ou horários" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section id="rotas">
+            <h2>Sugestões de Rotas</h2>
+            <p>Encontre rotas populares e seguras nas proximidades.</p>
+            <div class="form-row">
+                <div class="form-column">
+                    <h3>Rota 1</h3>
+                    <p>Praça de Boa Viagem - Praia do Buraco da Velha: Fácil - 13,5km</p>
+                </div>
+                <div class="form-column">
+                    <h3>Rota 2</h3>
+                    <p>Parque 13 de Maio - Praia do Pina: Moderado - 13,7km</p>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-column">
+                    <h3>Rota 3</h3>
+                    <p>Praia do Pina - Praia de Boa Viagem - Via Mangue: Fácil - 12,4km</p>
+                </div>
+                <div class="form-column">
+                    <h3>Rota 4</h3>
+                    <p>Rio Morno - Rio Beberibe: Moderado - 10,8km</p>
+                </div>
+            </div>
+
+            <h2>Adicione uma Nova Rota</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="nova-rota-nome">Nome da Rota:</label>
+                        <input type="text" id="nova-rota-nome" name="nova-rota-nome" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="nova-rota-descricao">Descrição da Rota:</label>
+                        <input type="text" id="nova-rota-descricao" name="nova-rota-descricao" required>
+                    </div>
+                </div>
+                <button type="submit">Adicionar Rota</button>
+            </form>
+        </section>
+
+        <section id="chat">
+            <h2>Chat</h2>
+            <p>Converse com seus parceiros de caminhada.</p>
+            <div id="chat-window">
+                <!-- As mensagens do chat aparecerão aqui -->
+            </div>
+            <input type="text" id="chat-input" placeholder="Digite sua mensagem">
+            <button type="submit">Enviar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Caminhada Amiga. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
